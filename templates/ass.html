@@ -1,0 +1,44 @@
+<!--
+    Name: Michael Olubode
+    Class: CSDP 332 – Spring 2024 
+    Assignment: (3) 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+</head>
+<body>
+    <h2>College Registration Form</h2>
+    <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="telephone">Telephone Number:</label>
+        <input type="tel" id="telephone" name="telephone" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <details>
+            <summary>Optional Survey Question</summary>
+            <label for="qualification">What is your highest qualification?</label><br>
+            <select id="qualification" name="qualification">
+                <option value="High School">High School</option>
+                <option value="Associate's Degree">Associate's Degree</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="Doctoral Degree">Doctoral Degree</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+        </details>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
