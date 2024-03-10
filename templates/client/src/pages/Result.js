@@ -6,6 +6,7 @@ export function Result() {
     return (
         <div>
             <Search result={true}/>
+            <hr></hr>
         </div>
     )
 }

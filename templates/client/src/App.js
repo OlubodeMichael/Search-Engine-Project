@@ -8,7 +8,7 @@ function reducer(state, action) {
     case 'searchClicked':
       return {
         ...state,
-        status: 'result'
+        status: state.status === 'result' ? state.status  : 'result'
       }
     default:
       return state;
@@ -17,8 +17,6 @@ function reducer(state, action) {
 
 const initialState = {
   status: 'home',
-  query: '',
-  queryList: [],
   result: false,
 }
 function App( ) {
@@ -27,7 +25,7 @@ function App( ) {
   
   return (
     <div>
-      { status === 'home' && <Home result={result}/> }
+      { status === 'home' && <Home result={result} dispatch={dispatch}/> }
       { status === 'result' && <Result /> }
     </div>
   )
