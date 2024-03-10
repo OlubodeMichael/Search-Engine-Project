@@ -1,9 +1,11 @@
 import { Search } from "../Search"
+import { Navbar } from "../Navbar"
 
-export function Home() {
+export function Home({result}) {
     return (
         <div>
-            <Search />
+            <Navbar />
+            <Search result={result}/>
         </div>
     )
 }
